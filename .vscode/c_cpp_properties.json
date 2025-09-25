@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "linux-clang-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/avr/iom328p.h",
+                "${workspaceFolder}/avr/portpins.h"
+            ],
+            "forcedInclude": [],
+            "compilerPath": "/usr/lib64/ccache/clang",
+            "defines": [
+                "F_CPU=16000000L",
+                "ARDUINO=10607",
+                "ARDUINO_AVR_UNO",
+                "ARDUINO_ARCH_AVR",
+                "USBCON"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64"
+        },
+        {
+            "name": "arduino-avr-gcc",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/lib64/ccache/avr-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "${default}",
+            "compilerArgs": [
+                "-lm",
+                "-mmcu=atmega328",
+                "-DF_CPU=16000000UL",
+                "-Os"
+            ]
+        }
+    ],
+    "version": 4
+}
