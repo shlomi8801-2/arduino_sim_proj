@@ -29,7 +29,7 @@ and some more docs -  https://baremetalmicro.com/tutorial_avr_digital_io/05-Inpu
 
 ---
 i started by adding the source files of arduino and commenting them for intellesense to work
-![[intellesense.png]]
+![intellesense]()
 then made a script to auto compile and upload it to the board(make sure in linux to set the port to the correct permissions!)
 ```bash
 #compile your code turn it into intel hex(supported by avrdude) and then upload
