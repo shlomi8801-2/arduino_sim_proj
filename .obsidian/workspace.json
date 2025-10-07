@@ -169,8 +169,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "ab88dc8a0a287b90",
+  "active": "468dc2fcad1c31e6",
   "lastOpenFiles": [
+    "extention.png",
+    "image.png",
+    "prog.conf",
     "intellesense.png",
     "mcu map atmega328p.png",
     "readme.md"

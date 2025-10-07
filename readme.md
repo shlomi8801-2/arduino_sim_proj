@@ -46,6 +46,10 @@ avrdude -Cprog.conf -v -p atmega328p -carduino -P /dev/ttyUSB0 -b 115200 -D -U f
 next find your board mcu map like so
 ![mcu map atmega328p.png](https://github.com/shlomi8801-2/arduino_sim_proj/blob/main/mcu%20map%20atmega328p.png?raw=true)
 
+if the intellesense still doesnt work try editing the c/c++ extention settings
+![extention](https://github.com/shlomi8801-2/arduino_sim_proj/blob/main/extention.png?raw=true)
+
+
 then from all you learned start coding for example this version of blink:
 ```c
 int main()
