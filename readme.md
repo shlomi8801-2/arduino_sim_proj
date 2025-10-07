@@ -60,3 +60,21 @@ int main()
 	return 0;
 }
 ```
+[credit](https://electronics.stackexchange.com/questions/67280/difference-between-reading-port-and-pin)
+**DDRx** is the **Data Direction**
+**PINx** is the **input buffer**
+**PORTx** is the **output buffer**
+
+here is some explaining on the random ``PORTB`` and ``DDRB`` names https://www.quora.com/What-are-DDRB-PORTB-and-PINB
+but basiclly you set a pin mode to output by its bit and then set it bit to on for example for PD7
+```c
+//data direction at secion D (we want PD)
+DDRD |= 1<<7; // which is in bin 1000 0000
+PORTD |= 1<<7; // turnes on the bit we set to output
+
+
+//we can also use
+DDRD |= 1<<7;
+PORTD = ~(0); // 1111 1111
+//which will set all the pins at seciond D to high voltage but only PD7 is set to output so only it will output any current
+```
