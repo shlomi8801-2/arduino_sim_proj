@@ -1,12 +1,12 @@
 //my arduino chip is atmega328p
 #include <avr/io.h>
-#include <util/delay.h>
 // #include "iom328p.h"
 // #include "portpins.h"
 
 int main()
 {
     // Set built-in LED pin as output
+    
     DDRB |= (1 << DDB5); // just sets the pb register at bit 5 which is the led state to output for output
     DDRD = ~(0); //set pd2 to output    
     while (1) {
