@@ -29,7 +29,8 @@ and some more docs -  https://baremetalmicro.com/tutorial_avr_digital_io/05-Inpu
 
 ---
 i started by adding the source files of arduino and commenting them for intellesense to work
-![intellesense]()
+![intellesense.png](https://github.com/shlomi8801-2/arduino_sim_proj/blob/main/intellesense.png?raw=true)
+
 then made a script to auto compile and upload it to the board(make sure in linux to set the port to the correct permissions!)
 ```bash
 #compile your code turn it into intel hex(supported by avrdude) and then upload
@@ -43,7 +44,7 @@ avr-objcopy main -O ihex main.hex
 avrdude -Cprog.conf -v -p atmega328p -carduino -P /dev/ttyUSB0 -b 115200 -D -U flash:w:./main.hex:i
 ```
 next find your board mcu map like so
-![[mcu map atmega328p.png]]
+![mcu map atmega328p.png](https://github.com/shlomi8801-2/arduino_sim_proj/blob/main/mcu%20map%20atmega328p.png?raw=true)
 
 then from all you learned start coding for example this version of blink:
 ```c
